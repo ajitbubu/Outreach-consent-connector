@@ -3,3 +3,4 @@ node_modules/
 *.log
 .consent-db.json
 .DS_Store
+.gstack/
