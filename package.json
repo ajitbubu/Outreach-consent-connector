@@ -1,0 +1,22 @@
+{
+  "name": "outreach-consent-connector",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Outreach ↔ Consent Platform bidirectional connector (channel-specific opt-outs)",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx scripts/demo-closed-loop.ts"
+  },
+  "dependencies": { "pg": "^8.13.1" },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.23.12",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

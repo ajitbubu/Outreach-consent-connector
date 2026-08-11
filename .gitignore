@@ -1,0 +1,5 @@
+node_modules/
+.env
+*.log
+.consent-db.json
+.DS_Store
