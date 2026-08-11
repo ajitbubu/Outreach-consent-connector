@@ -139,6 +139,11 @@ export class FileConsentDb implements ConsentPlatformPort, PartyDestinationLooku
     detail: string;
     sourceRef: string;
   }): Promise<void> {
+    // Idempotent like signals: every poll cycle re-observes a stuck record,
+    // and re-quarantining it each time would flood the review queue.
+    if (this.db.quarantine.some((q) => q.sourceRef === input.sourceRef && q.reason === input.reason)) {
+      return;
+    }
     this.db.quarantine.push({
       quarantineId: randomUUID(),
       reason: input.reason,
