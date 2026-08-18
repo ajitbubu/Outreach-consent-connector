@@ -10,7 +10,7 @@ Outreach (inbound) → Consent DB / Preference Center → Downstream (Outreach)
 ```
 
 Source spec: `Outreach-Sentinel-Consent-Connector-Architecture-API-Specification.md`
-(in this folder).
+(in this folder). API reference: [`docs/API.md`](docs/API.md).
 
 ## Outreach's consent shape — and how this connector handles it
 

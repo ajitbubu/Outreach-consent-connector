@@ -4,3 +4,4 @@ node_modules/
 .consent-db.json
 .DS_Store
 .gstack/
+.outreach-tokens.json
